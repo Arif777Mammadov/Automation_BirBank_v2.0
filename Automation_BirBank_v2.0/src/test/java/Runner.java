@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources/Features"},
         glue = {"Steps"},
-        tags = "@test3",
-        //tags = "@test or @test1 or @test2 or @test3",
+        //tags = "@test3",
+        tags = "@test or @test1 or @test2 or @test3",
         plugin = {"pretty","html:target/cucumber-reports/report.html"},
         monochrome = true
 )
