@@ -113,8 +113,9 @@ public class BirBank {
 
     @Then("Cancel payment")
     public void cancelPayment() throws InterruptedException {
-        my_elem.pay_elem.cancel();
-        my_elem.pay_elem.cancel();
+        for(int i = 0; i<3;i++){
+            my_elem.pay_elem.cancel();
+        }
         Thread.sleep(5000);
     }
 
